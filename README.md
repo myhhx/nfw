@@ -50,4 +50,4 @@ nfw非常小，总共12个文件，共1176行（其中和安全有关的代码�
 
 ｍｓｎ：myhhx@hotmail.com
 
-ｗｗｗ：www.myhhx.com
+ｗｗｗ：http://www.myhhx.com
