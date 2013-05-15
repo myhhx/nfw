@@ -10,8 +10,25 @@ nfw非常小，总共12个文件，共1176行（其中和安全有关的代码�
 用法
 ----
 
-购买源码和相关资料
-------------------
+    [myhhx@lovelywife bin]$ ./nfw_server_2262_linux_x86_64
+    exception: nfw_assert(argc >= 3) [main:nfw_server.cpp:20]
+    example: nfw_server 0.0.0.0 12345 --user name key --entry http a.com 80 --entry https a.com 443 --entry ssh a.com 22
+    [myhhx@lovelywife bin]$ ./nfw_client_2261_linux_x86_64
+    exception: nfw_assert(argc >= 5) [main:nfw_client.cpp:19]
+    example: nfw_client a.com 12345 user-name user-key --entry 0.0.0.0 80 http --entry 0.0.0.0 443 https --entry 0.0.0.0 22 ssh
+
+购买
+----
+
+A
+
+包括：README文档、BUILD文档、源码。
+
+价格：99元人民币。
+
+　
+
+B
 
 包括：README文档、BUILD文档、讲解视频和源码。
 
@@ -31,10 +48,10 @@ nfw非常小，总共12个文件，共1176行（其中和安全有关的代码�
 
 我希望以此能养家糊口，所以希望买家不要传播、散布您所购买的资料，谢谢！
 
-展示
+示例
 ----
 
-以下代码示例涉及到c++11的右值引用、move和lambda。
+以下代码涉及到c++11的右值引用、move和lambda。
 
     template <typename handler_t>
     void resolve(boost::asio::io_service & io_service,
