@@ -46,8 +46,8 @@ nfw非常小，总共12个文件，共1176行（其中和安全有关的代码�
 联系
 ---
 
-ｑｑ：　1285426900
+ｑｑ：　　1285426900
 
-ｍｓｎ：myhhx@hotmail.com
+ｍａｉｌ：myhhx@hotmail.com
 
-ｗｗｗ：http://www.myhhx.com
+ｗｗｗ：　http://www.myhhx.com
