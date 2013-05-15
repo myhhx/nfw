@@ -34,6 +34,28 @@ nfw非常小，总共12个文件，共1176行（其中和安全有关的代码�
 展示
 ----
 
+以下代码示例涉及到c++11的右值引用、move和lambda。
+
+    template <typename handler_t>
+    void resolve(boost::asio::io_service & io_service,
+            const std::string & host, const std::string & service,
+            handler_t && handler) {
+        boost::asio::ip::tcp::resolver * resolver =
+                new boost::asio::ip::tcp::resolver(io_service);
+        resolver->async_resolve(
+                boost::asio::ip::tcp::resolver::query(host, service),
+                [resolver, &io_service, handler] (
+                        const boost::system::error_code & error,
+                        boost::asio::ip::tcp::resolver::iterator it) {
+                    if (!error) {
+                        connect(io_service, it, resolver, std::move(handler));
+                    } else {
+                        handler(NULL);
+                        delete resolver;
+                    }
+                });
+    }
+
 计划
 ----
 
