@@ -10,13 +10,6 @@ nfw非常小，总共12个文件，共1176行（其中和安全有关的代码�
 用法
 ----
 
-    [myhhx@lovelywife bin]$ ./nfw_server_2262_linux_x86_64
-    exception: nfw_assert(argc >= 3) [main:nfw_server.cpp:20]
-    example: nfw_server 0.0.0.0 12345 --user name key --entry http a.com 80 --entry https a.com 443 --entry ssh a.com 22
-    [myhhx@lovelywife bin]$ ./nfw_client_2261_linux_x86_64
-    exception: nfw_assert(argc >= 5) [main:nfw_client.cpp:19]
-    example: nfw_client a.com 12345 user-name user-key --entry 0.0.0.0 80 http --entry 0.0.0.0 443 https --entry 0.0.0.0 22 ssh
-
 购买
 ----
 
@@ -25,8 +18,6 @@ A
 包括：README文档、BUILD文档、源码。
 
 价格：99元人民币。
-
-　
 
 B
 
